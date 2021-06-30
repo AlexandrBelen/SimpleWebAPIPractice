@@ -36,6 +36,19 @@ namespace MyAPI.Controllers
             {
                 products = products.Where(p => p.Sku == queryParametrs.Sku);
             }
+
+            if (!string.IsNullOrEmpty(queryParametrs.Name))
+            {
+                products = products.Where(p => p.Name.ToLower().Contains(queryParametrs.Name.ToLower()));
+            }
+            if (!string.IsNullOrEmpty(queryParametrs.SortBy))
+            {
+                if (typeof(Product).GetProperty(queryParametrs.SortBy) != null)
+                {
+                    products = products.OrderByCustom(queryParametrs.SortBy, queryParametrs.SortOrder);
+                }
+            }
+
             products = products
                 .Skip(queryParametrs.Size * (queryParametrs.Page - 1))
                 .Take(queryParametrs.Size);
