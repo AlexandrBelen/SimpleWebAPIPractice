@@ -741,11 +741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexandr\\Desktop\\WebAPI\\MyAPI\\MyAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Alexandr\\Desktop\\WebAPI\\SimpleWebAPIPractice\\MyAPI\\MyAPI.csproj",
       "projectName": "MyAPI",
-      "projectPath": "C:\\Users\\Alexandr\\Desktop\\WebAPI\\MyAPI\\MyAPI.csproj",
+      "projectPath": "C:\\Users\\Alexandr\\Desktop\\WebAPI\\SimpleWebAPIPractice\\MyAPI\\MyAPI.csproj",
       "packagesPath": "C:\\Users\\Alexandr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexandr\\Desktop\\WebAPI\\MyAPI\\obj\\",
+      "outputPath": "C:\\Users\\Alexandr\\Desktop\\WebAPI\\SimpleWebAPIPractice\\MyAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alexandr\\AppData\\Roaming\\NuGet\\NuGet.Config",
