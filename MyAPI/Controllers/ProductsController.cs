@@ -32,6 +32,13 @@ namespace MyAPI.Controllers
             {
                 products = products.Where(p => p.Price >= queryParametrs.MinPrice && p.Price <= queryParametrs.MaxPrice);
             }
+
+            if (!string.IsNullOrEmpty(queryParametrs.SearchTerm))
+            {
+                products = products.Where(p => p.Sku.Contains(queryParametrs.SearchTerm) || 
+                    p.Name.ToLower().Contains(queryParametrs.SearchTerm.ToLower()));
+            }
+
             if (!string.IsNullOrEmpty(queryParametrs.Sku))
             {
                 products = products.Where(p => p.Sku == queryParametrs.Sku);
